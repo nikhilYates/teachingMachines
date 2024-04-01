@@ -1,6 +1,6 @@
 import numpy as np
 from joblib import load
-import time
+import sklearn
 
 
 model = load("check_my_heart_model.joblib")
@@ -40,6 +40,7 @@ if prediction == 1:
     print("High risk of heart disease. Consult with a doctor immediately.")
 else:
     print("Low to no risk of heart disease. If you feel any discomfort, please see a doctor")
+
 
 
     
