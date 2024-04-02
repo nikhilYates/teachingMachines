@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML-Based Heart Disease Prediction Algorithm</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles/heart.css">
+</head>
+    <body>
+        <div class="main-container">
+            <div class="left-side">
+                <div class="heading-div">
+                    <h2>Patient Form</h2>
+                </div>
+                <form action="/predict" method="post" class="patient-form">
+
+                    <!-- age -->
+                    <p>Age</p>
+                    <input type="text" name="age" placeholder="i.e., '34'" required="required" />
+                    
+                    <!-- sex -->
+                    <p>Sex (select one)</p>
+                    <input type="radio" name="sex" id="male" required="required" value="1" /><label for="male">male</label> 
+                    <input type="radio" name="sex" id="female" required="required" value="0"/><label for="female">female</label> 
+
+                    <!-- resting bp -->
+                    <p>Resting Blood Pressure</p>
+                    <input type="text" name="r-bp" placeholder="i.e., '75'" required="required" />
+                    
+                    <!-- cholesterol -->
+                    <p>Cholesterol Level</p>
+                    <input type="text" name="chol" placeholder="i.e., 120" required="required" />
+                    
+                    <!-- angina -->
+                    <p>Pain Type (select one)</p>
+                    <input type="radio" name="angina" id="typical" required="required" value="1" /><label for="typical">Typical</label>
+                    <input type="radio" name="angina" id="t-angina" required="required" value="2"/><label for="t-angina">Typical Angina</label>
+                    <input type="radio" name="angina" id="n-angina" required="required" value="3"/><label for="n-angina">Non-Anginal</label>
+                    <input type="radio" name="angina" id="asympt" required="required" value="4"/><label for="asympt">Asymptomatic</label>
+
+                    <!-- blood sugar -->
+                    <p>Blood Sugar (select one)</p>
+                    <input type="radio" name="b-sugar" id="high" required="required" value="1"/><label for="high">At Least 12mg/dl</label>
+                    <input type="radio" name="b-sugar" id="low" required="required" value="0"/><label for="low">Lower Than 12mg/dl</label>
+
+                    <!-- max blood pressure -->
+                    <p>Maximum Blood Pressure</p>
+                    <input type="text" name="m-bp" placeholder="i.e., '140'" />
+                    
+                    <!-- exercise-induced angina -->
+                    <p>Has exercise caused an angina? (select one)</p>
+                    <input type="radio" name="ex-angina" id="yes" required="required" value="1" /><label for="yes">Yes</label>
+                    <input type="radio" name="ex-angina" id="no" required="required" value="0"/><label for="no">No</label>
+
+                    <p>Resting ECG Level</p>
+                    <input type="radio" id="ecg-0" name="rest-ecg" required="required" value="0"/><label for="eccg-0">Normal</label>
+                    <input type="radio" id="ecg-1" name="rest-ecg" required="required" value="1"/><label for="eccg-1">ST-T Wave Abnormalit</label>
+                    <input type="radio" id="ecg-2" name="rest-ecg" required="required" value="2"/><label for="eccg-2">Left Ventricular Hypertrophy</label>
+
+                    <!-- ST-depression -->
+                    <p>Different between ST-Depression (exercise vs rest)</p>
+                    <input type="text" name="st-dep" placeholder="i.e., '1.6'" />
+
+                    <!-- ST segment -->
+                    <p>ST Segment Slope During Exercise (select one)</p>
+                    <input type="radio" name="st-seg" id="normal" value="0"/><label for="normal">Normal</label>
+                    <input type="radio" name="st-seg" id="upslope" value="1"/><label for="upslope">Upsloping</label>
+                    <input type="radio" name="st-seg" id="d-slope" value="2"/><label for="d-slope">Downsloping</label>
+                    <br>
+                    <!-- Add other fields here similarly -->
+                    <div class="button-div">
+                        <button class="patient-button" type="submit">PREDICT</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </body>
+</html>

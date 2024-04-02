@@ -3,7 +3,7 @@ from joblib import load
 import sklearn
 
 
-model = load("check_my_heart_model.joblib")
+model = load("flask-app/check_my_heart_model.joblib")
 print("ML-Based Heart Disease Prediction\n\n")
 
 age = int(input("Enter age: "))
@@ -24,7 +24,7 @@ max_heartRate = int(input("Enter maximum heart rate: "))
 print("\n----------------------------------------------------------------------\n")
 induced_angina = int(input("Has exercise induced an angina? \n'1' : Yes\n'0' : No \n"))
 print("\n----------------------------------------------------------------------\n")
-old_peak = int(input("ST-depression (exercise vs rest): "))
+old_peak = float(input("ST-depression (exercise vs rest): "))
 print("\n----------------------------------------------------------------------\n")
 st = int(input("Enter ST segment during exercize\n'0' : Normal\n'1' : Upsloping\n'2' : Downsloping\n "))
 
