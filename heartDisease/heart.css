@@ -1,0 +1,87 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.main-container {
+    display: flex;
+    padding: 1em;
+
+}
+
+.left-side {
+    flex: 1;
+    padding: 2em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.heading-div {
+    text-align: center;
+}
+
+.right-side {
+    flex: 2;
+    padding: 1em;
+
+}
+
+.patient-form {
+
+    display: block;
+
+}
+
+.patient-form input {
+    background-color:white;
+    border: none;
+    height: 1.3em;
+    font-weight: 400;
+}
+
+.patient-form input[type="text"] {
+    width: 100%;
+}
+
+.patient-form input::after {
+    font-weight: 500;
+}
+
+.patient-form input::selection {
+    border-color: aqua;
+}
+
+.patient-form p {
+    font-weight: 200;
+    color: rgb(124, 124, 124);
+}
+
+.button-div {
+
+    margin-top: 2em;
+    text-align: center;
+}
+
+.patient-button {
+
+    
+    height: 3em;
+    width: 9em;
+    background-color: white;
+    border: none;
+    border-radius: 1em;
+
+}
+
+.patient-button:hover {
+    color: white;
+    background-color: black;
+    cursor:crosshair;
+    border: 1px solid white;
+}

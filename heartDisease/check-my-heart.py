@@ -22,7 +22,7 @@ normal_ecf = int(input("Resting ECG level:\n'0' : Normal\n'1' : Abnormality in S
 print("\n----------------------------------------------------------------------\n")
 max_heartRate = int(input("Enter maximum heart rate: "))
 print("\n----------------------------------------------------------------------\n")
-induced_angina = int(input("Has exercize induced an angina? \n'1' : Yes\n'0' : No \n"))
+induced_angina = int(input("Has exercise induced an angina? \n'1' : Yes\n'0' : No \n"))
 print("\n----------------------------------------------------------------------\n")
 old_peak = int(input("ST-depression (exercise vs rest): "))
 print("\n----------------------------------------------------------------------\n")
