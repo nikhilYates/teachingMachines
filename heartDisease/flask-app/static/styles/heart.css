@@ -10,16 +10,15 @@ body {
 }
 
 .main-container {
-    display: flex;
     padding: 1em;
-
+    
 }
 
 .left-side {
-    flex: 1;
     padding: 2em;
     border: 1px solid white;
     border-radius: 10px;
+    width: 30%;
 }
 
 .heading-div {
@@ -29,6 +28,7 @@ body {
 .patient-form {
 
     display: block;
+    width: 100%;
 
 }
 
