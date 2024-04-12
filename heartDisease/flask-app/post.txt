@@ -1,0 +1,1 @@
+curl -d 'age=23&sex=1&r-bp=75&chol=110&angina=1&b-sugar=1&m-bp=130&ex-angina=1&rest-ecg=2&st-dep=1.2&st-seg=1' http://127.0.0.1:5000
